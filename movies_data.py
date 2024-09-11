@@ -6,7 +6,7 @@ movies_list = [
         "year": "2001",
         "rating": 4.2,
         "category": "Action",
-    },
+    }, 
     {
         "id": 2,
         "title": "The Matrix",
