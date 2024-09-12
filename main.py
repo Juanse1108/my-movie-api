@@ -23,7 +23,7 @@ def get_movie(id: int):
 
 @app.get('/movies/', tags=['Movies'])
 def get_movies_by_category(category: str, year: int):
-    return [ item for item in movies_list if item["category"] == category ]
+    return [item for item in movies_list if item["category"] == category and item["year"] == year]
 
 @app.post('/movies', tags=['Movies'])
 def create_movie(id: int = Body(), title: str = Body(), overview: str = Body(), year: int = Body(), rating: float = Body(), category: str = Body()):
